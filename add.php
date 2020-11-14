@@ -38,7 +38,7 @@ date_default_timezone_set("America/Santo_Domingo");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/framework/bootstrap.min.css" media="screen">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">   
-    <title>Inicio</title>
+    <title>Add</title>
 </head>
 <body>
     
@@ -50,7 +50,7 @@ date_default_timezone_set("America/Santo_Domingo");
     <div class="container d-flex justify-content-between">
       <a href="index.php" class="navbar-brand d-flex text-white align-items-center">
        
-        <strong>Inicio</strong>
+        <strong><i class="fas fa-home"></i>  &nbsp;Inicio</strong>
       </a>
     </div>
   </div>
@@ -95,21 +95,16 @@ date_default_timezone_set("America/Santo_Domingo");
                         </div>
                       <br>
                         <center>
-                              <div class="btn-group">
-                              <button href=" index.php"  class="btn btn-lg btn-outline-primary">
-                             Go back&nbsp;&nbsp;<i class="fas fa-reply-all"></i></button>
+                              <div class="col-6">
                               
-                            <button type="button" class="btn btn-lg btn-outline-success">  Submit  
+                            <button onclick="confcheck()" type="submit" class="btn btn-block btn-lg btn-outline-success" >  Submit  
                             &nbsp;&nbsp;<i class="fas fa-paper-plane"></i></button>
                             
                               </div>
                                 
                             </center>
 
-                        <center>
-                            
-                            
-                        </center>
+                      
                 </div>
                 <form>
 

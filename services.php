@@ -42,50 +42,6 @@ foreach ($lista as $key => $articulo) {
 return $inicio;
 }
  
-public function uploadImage($directory,$name,$tmpfile,$type,$size){
-
-$isSuccess = false;
-
-if(($type=="image/gif") 
-|| ($type=="image/jpeg")
-|| ($type=="image/png")
-|| ($type=="image/jpg")
-|| ($type=="image/JPG")
-|| ($type=="image/pjpeg") && ($size < 1000000)){
-
-if(!file_exists($directory)){
-  
-  mkdir($directory,0777,true);
-
-  if(file_exists($directory)){
-
-   $this->uploadfile($directory . $name,$tmpfile);
-    $isSuccess = true;
-    
-  }
-  
-}else{
-
- $this->uploadfile($directory . $name,$tmpfile);
-    $isSuccess = true;
-    
-      }
-   }else{
-    $isSuccess = false;
-
-   }
-   return $isSuccess;
-} 
-
-private function uploadfile($name,$tmpfile){
- 
-   if(file_exists($name)){
-     unlink($name);
-    }
-    move_uploaded_file($tmpfile,$name);
-     
-  
-}
 
 }
 

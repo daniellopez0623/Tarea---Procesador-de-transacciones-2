@@ -47,14 +47,16 @@ $transferlist = $servicio->buscar($transferlist,'idtransacciones',$_GET['idtrans
     <div class="container">
       <div class="row">
         <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white">Inicio</h4>
+        <a href="log.txt" class="navbar-brand  align-items-center">
+     <strong><i class="fas fa-download"></i>  &nbsp;Download Transaction</strong>
+</a>
         </div>
         <div class="col-sm-4 offset-md-1 py-4">
           <h4 class="text-white">Contact</h4>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
+            <li><a href="#" class="text-white">Daniel Lopez</a></li>
+            <li><a href="#" class="text-white">809-260-5869</a></li>
+            <li><a href="#" class="text-white">20186367@itla.edu.do</a></li>
           </ul>
         </div>
       </div>
@@ -63,7 +65,7 @@ $transferlist = $servicio->buscar($transferlist,'idtransacciones',$_GET['idtrans
   <div class="navbar navbar-dark bg-dark shadow-sm">
     <div class="container d-flex justify-content-between">
       <a href="index.php" class="navbar-brand d-flex align-items-center">
-        <strong>Inicio</strong>
+        <strong><i class="fas fa-home"></i> &nbsp;Inicio</strong>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

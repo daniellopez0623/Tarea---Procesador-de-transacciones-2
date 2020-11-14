@@ -49,39 +49,20 @@ header("location: index.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/framework/bootstrap.min.css" media="screen">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">    
-    <title>Inicio</title>
+    <title> Update  </title>
 </head>
 <body>
     
 
 
  <header>
-  <div class="collapse bg-dark" id="navbarHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white">Inicio</h4>
-        </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
+ 
+  <div class="navbar navbar-dark bg-primary shadow-sm">
     <div class="container d-flex justify-content-between">
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-        <strong>Inicio</strong>
+      <a href="index.php" class="navbar-brand d-flex align-items-center">
+        
+        <strong><i class="fas fa-home"></i>  &nbsp;Inicio</strong>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
     </div>
   </div>
 </header>
@@ -103,31 +84,29 @@ header("location: index.php");
 
 
         <div class="card">
-                <div class="card-header">
-                    Editar Transaccion
-                </div>
+               
                 <div class="card-body">
 
-                    <form enctype="multipart/form-data" action="update.php?id=<?php echo $elemento->id; ?>"
+                    <form action="update.php?id=<?php echo $elemento->id; ?>"
                         method="post">
-                        <div class="form-group">
-                            <label for="id">ID</label>
+                        <div class="form-group text-center ">
+                            <label for="id">ID:</label>
                             <input type="text" value=<?php echo $elemento->id; ?> class="form-control " id="id" name="id"
                                 placeholder="" disabled>
                         </div>
                         <div class="form-group">
-                            <label for="monto">Monto</label>
+                            <label for="monto">Amount:</label>
                             <input type="text" value=<?php echo $elemento->monto; ?> class="form-control" id="monto"
                                 name="monto" placeholder="">
                         </div>
 
                         <div class="form-group">
-                            <label for="fecha">Fecha</label>
+                            <label for="fecha">Date:</label>
                             <input type="text" value=<?php echo $elemento->fecha; ?> class="form-control" id="fecha"
                                 name="fecha" placeholder="">
                         </div>
                         <div class="form-group">
-                            <label for="descripcion">Descripcion</label>
+                            <label for="descripcion">Description:</label>
                             <input type="text" value=<?php echo $elemento->descripcion; ?> class="form-control" id="descripcion"
                                 name="descripcion" placeholder="">
                         </div>
@@ -135,11 +114,12 @@ header("location: index.php");
 
                         <br>
                         <center>
-                            <a href="index.php" class="btn btn-outline-secondary">Volver atras &nbsp;&nbsp; <i
+                          <div class="btn-group">
+                            <a href="index.php" class="btn btn-outline-secondary">Go back&nbsp;&nbsp; <i
                                     class="fas fa-reply-all"></i></a>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <button type="submit" class="btn btn-outline-success">Editar Transaccion &nbsp;&nbsp; <i
-                                    class="fas fa-check"></i></button>
+                            <button type="submit" class="btn btn-outline-success">Edit Transaction &nbsp;&nbsp; <i
+                                    class="fas fa-paper-plane"></i></button>
+                                    </div>
                         </center>
 
                 </div>
